@@ -1,0 +1,2 @@
+# GoStarService
+GoStar微服务框架服务自动注册自动发现自动剔除模块
