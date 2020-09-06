@@ -14,7 +14,7 @@ func TestRegister(t *testing.T) {
 	registryInst, err := registry.InitRegistry(context.TODO(), "etcd",
 		registry.WithAddrs([]string{"127.0.0.1:2379"}),
 		registry.WithTimeout(time.Second),
-		registry.WithRegistryPath("/ibinarytree/koala/"),
+		registry.WithRegistryPath("/sinaleju/caojingfu/"),
 		registry.WithHeartBeat(5),
 	)
 	if err != nil {

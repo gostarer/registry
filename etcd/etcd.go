@@ -88,7 +88,7 @@ func (e *EtcdRegistry) Init(ctx context.Context, opts ...registry.Option) (err e
 func (e *EtcdRegistry) Register(ctx context.Context, service *registry.Service) (err error) {
 
 	select {
-	case e.s <- service:
+	case e.serviceCh <- service:
 	default:
 		err = fmt.Errorf("register chan is full")
 		return
